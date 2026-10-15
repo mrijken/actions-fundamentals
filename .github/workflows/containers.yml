@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: On the runner
-        run: which git
+        run: |
+          ls /usr/bin
+          python --version
 
   job-container:
     runs-on: ubuntu-latest
