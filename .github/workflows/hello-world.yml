@@ -33,7 +33,7 @@ jobs:
         with:
           persist-credentials: false
       - id: hello-action
-        uses: $/hello-world-composite-python-action
+        uses: $/.github/workflows/hello-world-composite-python-action
         with:
           who-to-greet: "@jessehouwing"
       - run: echo "The time was $env:TIME when the action said hello"
