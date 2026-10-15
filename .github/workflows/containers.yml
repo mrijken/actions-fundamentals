@@ -16,7 +16,7 @@ jobs:
         uses: docker://alpine:3.22
         with:
           entrypoint: /bin/sh
-          args: -c "cat /etc/os-release"
+          args: -c "which git"
   job-container:
     runs-on: ubuntu-latest
     container:
